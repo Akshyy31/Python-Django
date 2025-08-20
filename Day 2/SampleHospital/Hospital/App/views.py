@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def Home(request):
-    return render(request,'index.html')
+    return render(request,'base.html')
 
 def Contact(request):
     data={'username':"Akshay",'phone':8943945360}
