@@ -19,4 +19,5 @@ def Department(request):
     return render (request,'department.html')
 
 def Respo(request):
-    return HttpResponse("Https response only")
+    # return HttpResponse("Https response only")
+    return HttpResponse("<h1>Bridgeoonnnn</h1>")
