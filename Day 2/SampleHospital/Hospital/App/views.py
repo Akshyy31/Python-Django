@@ -1,9 +1,9 @@
 from django.shortcuts import render
-
+from django.http import HttpResponse
 # Create your views here.
 
 def Home(request):
-    return render(request,'base.html')
+    return render(request,'index.html')
 
 def Contact(request):
     data={'username':"Akshay",'phone':8943945360}
@@ -17,3 +17,6 @@ def Docters(request):
 
 def Department(request):
     return render (request,'department.html')
+
+def Respo(request):
+    return HttpResponse("Https response only")
