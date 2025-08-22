@@ -2,5 +2,24 @@
 
 
 {% block content %}
-<h1>Doctors Page</h1>
+
+
+ <div class="row">
+{% for d in doctors %}
+
+<div class="card col-md-4 m-4 d-flex " style="width: 16rem;">
+  <img class="card-img-top" src="{{ d.doc_image.url }}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Doctor : {{ d.doctor_name }}</h5>
+    <h5 class="card-text">Specialization : {{ d.doctor_Specialization }}</h5>
+    <p class="card-text">Department : {{ d.doctor_dept }}</p>
+    
+  </div>
+</div>
+
+{% endfor %}
+</div>
 {% endblock %}
+
+
+

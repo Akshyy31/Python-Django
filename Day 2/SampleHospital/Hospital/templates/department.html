@@ -3,4 +3,15 @@
 
 {% block content %}
 <h1>Department Page</h1>
+
+{% for d in dept %}
+
+<div class="text-center mx-auto" style="height: 100px; width: 600px; background-color: blue; margin: 20px;">
+    <h1>{{ d.dept_name }}</h1>
+    <p>{{ d.dept_desc }}</p>
+</div>
+
+{% endfor %}
+
 {% endblock %}
+
